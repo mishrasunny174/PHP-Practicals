@@ -25,5 +25,5 @@ services:
     depends_on: 
       - database
 volumes:
-  php-practicals-db-data
+  php-practicals-db-data:
     
