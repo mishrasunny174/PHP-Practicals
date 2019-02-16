@@ -1,0 +1,29 @@
+version: "3"
+
+services: 
+  practicals:
+    build: ./practicals
+    restart: always
+    ports:
+      - 8000:80
+    depends_on: 
+      - database
+
+  database:
+    image: mariadb
+    restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD: password 
+    volumes:
+      - php-practicals-db-data:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on: 
+      - database
+volumes:
+  php-practicals-db-data
+    
