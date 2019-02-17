@@ -8,6 +8,8 @@ services:
       - 8000:80
     depends_on: 
       - database
+    volumes:
+      - ./practicals/src/:/var/www/html
 
   database:
     image: mariadb

@@ -25,7 +25,8 @@ body{
 
 .submit-button{
     width: 94%;
-    margin: 0 auto;
+    margin: 10px auto;
+    margin-bottom: 5px;
     padding: 2px;
 }
 
