@@ -25,7 +25,7 @@ function sumUptoNEven($num){
 		<h3>Practical 15</h3>
 		<p>Write a php webpage to find sum of even numbers upto n</p>
 	</div>
-	<form action="/practical9.php" method="POST" class="input-form">
+	<form action="/practical15.php" method="POST" class="input-form">
 			<input type="number" class="input-number" name="num" placeholder="Enter number: " required
 				<?php if(isset($num)) echo "value=\"$num\""?>>
 			<input type="submit" class="submit-button" name="submit" value="submit">
