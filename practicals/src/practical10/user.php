@@ -18,7 +18,7 @@ class User
             $pdo = null;
             return $stmt->fetch();
         } catch (PDOException $e) {
-            echo "FATAL ERROR!!!";
+            die("FATAL ERROR!!!");
         }
         return null;
     }
@@ -30,7 +30,7 @@ class User
             $stmt = $pdo->prepare(User::$set_user_sql);
             return $stmt->execute(["username" => $username, "password" => $password]);
         } catch (PDOException $e) {
-            echo "FATAL ERROR!!!";
+            echo die("FATAL ERROR!!!");
         }
 
     }
