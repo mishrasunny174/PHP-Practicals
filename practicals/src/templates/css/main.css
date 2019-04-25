@@ -48,3 +48,23 @@ body{
 .footer {
     text-align: center;
 }
+
+.links-block{
+    text-align: center;
+}
+
+.links{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    margin: auto;
+    width: 60%;
+    transition-duration: 0.5s;
+}
+
+
+.links:hover {
+    background-color: #dddddd;
+}
